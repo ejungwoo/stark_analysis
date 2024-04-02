@@ -27,6 +27,8 @@ void read_conv()
     {
         tree -> GetEntry(iEvent); // channelArray update for event number = iEvent
 
+        x3Array -> Clear("C");
+
         auto numChannels = channelArray -> GetEntries();
         for (auto iChannel=0; iChannel<numChannels; ++iChannel)
         {
